@@ -5,4 +5,7 @@
 * Class `RecursiveProblem` merupakan contoh error `StakcOverflow`, dimana ketika method memanggil terlalu dalam sebuah value, maka value akan tersimpan dalam stack, dan stack tersebut akan menumpuk value sehingga sistem tidak dapat menampung value hasil pemanggilan tersebut.
 * Keyword `extends` digunakan untuk pewarisan dari class, jika dari interface gunakan `implements`.
 * Keyword `this` digunakan untuk mengakses field atau method objek dari class, untuk menghindari variabel shadowing dari parameter jika nama variabelnya sama. Sementara itu, keyword `super` digunakan untuk mengambil value dari class parent, namun penggunakan keyword ini sifatnya *opsional*.
-* 
+* Record Class (`StudentRecords`) hanya berfungsi untuk menyimpan data dan bersifat immutable (tidak bisa diubah) dan `record` class hanya bisa implement interface, tidak bisa extend class.
+* Enum Class juga bisa ditambahkan field, constructor dan method.
+* Setiap class Exception di java memiliki super class yakni `Throwable`.
+* Exception hanya dapat di extend di method menggunakan keyword `throws`. Untuk mengakses method exception harus implementasi blok try-catch, namun tidak wajib jika class extend ke `Runtime Exception` ataupun `Error`. Tetapi jika tidak menggunakan blok try-catch maka sistem akan force-close. Jika ingin mengetahui secara detail error seperti nama class, letak baris dll gunakan method `printStackTrace()` dari class `Throwable`.
