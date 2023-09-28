@@ -5,3 +5,6 @@
 * Method `UUID.randomUUID()` digunakan untuk men-generate unique number yang selalu berbeda.
 * Gunakan `Objects.toString(Object value)` jika tidak ingin melakukan pengecekan manual menggunakan if. Begitu juga dengan `equals()` dan `hashCode()`. Hal ini bertujuan untuk menghindari NPE.
 * Class `PropertiesApp` digunakan untuk mengkonfigurasi dan menyimpan file properties.
+
+## Related Article
+![Perbedaan Antara StringBuffer dan StringBuilder di Java](https://ichwansholihin.medium.com/perbedaan-antara-stringbuffer-dan-stringbuilder-di-java-5465a8d01005)
