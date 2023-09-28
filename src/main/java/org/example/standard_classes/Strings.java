@@ -17,6 +17,7 @@ public class Strings {
 
         StringBuilder builder = new StringBuilder();
         builder.append("Ichwan ");
+        builder.insert(6,"-");
         builder.append("Sholihin");
 
         System.out.println(builder);
