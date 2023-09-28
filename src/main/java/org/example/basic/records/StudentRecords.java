@@ -15,4 +15,9 @@ public record StudentRecords(String name, String npm) {
 //    public void setName(String name){
 //        this.name = name;
 //    }
+
+    @Override
+    public String name() {
+        return name;
+    }
 }

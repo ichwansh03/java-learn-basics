@@ -9,3 +9,4 @@
 * Enum Class juga bisa ditambahkan field, constructor dan method.
 * Setiap class Exception di java memiliki super class yakni `Throwable`.
 * Exception hanya dapat di extend di method menggunakan keyword `throws`. Untuk mengakses method exception harus implementasi blok try-catch, namun tidak wajib jika class extend ke `Runtime Exception` ataupun `Error`. Tetapi jika tidak menggunakan blok try-catch maka sistem akan force-close. Jika ingin mengetahui secara detail error seperti nama class, letak baris dll gunakan method `printStackTrace()` dari class `Throwable`.
+* Annotation bertujuan untuk menambahkan metadata pada program, dengan keyword `@interface` dan attribute wajib `@Terget` untuk scope penggunaan (FIELD/METHOD/CLASS) dan `@Retention` untuk scope program berjalan (RUNTIME/CLASS/SOURCE). Lihat contoh implementasinya di class `StudentApp`.
