@@ -1,6 +1,7 @@
 package org.example.collection;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -15,7 +16,9 @@ public class ListApp {
         }
 
         List<String> name = new LinkedList<>();
-        name.addAll(List.of("Andi","Andre","Andini"));
+        name.addAll(List.of("Andi","Andre","Andini","Abdul"));
+
+        Collections.sort(name);
 
         for (var value : name){
             System.out.println(value);
