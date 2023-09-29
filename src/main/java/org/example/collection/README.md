@@ -8,3 +8,6 @@
 * Queue support First In First Out/antrian memiliki tiga class turunan: ArrayDeque (sama seperti ArrayList), LinkedListQueue (sama seperti LinkedList) dan PriorityQueue (sama seperti ArrayList, namun menggunakan implementasi Comparable/Comparator untuk mengurutkan data). Deque support Last In First Out/tumpukan.
 * Map berisikan key dan value. Key pada map harus bersifat unique dan tidak boleh duplikat serta key harus mapping satu value. Class `WeakHashMap` cocok digunakan untuk menyimpan data cache secara temporary karena akan menghapus data yang tidak pernah digunakan.
 * Setiap interface `Collection` sudah disediakan class abstract dan tidak perlu implement collection.
+
+## Related Article
+![Eksplorasi Struktur Data Queue dan Deque serta Implementasinya di Java](https://ichwansholihin.medium.com/eksplorasi-struktur-data-queue-dan-deque-serta-implementasinya-di-java-15b016e87703)
