@@ -6,7 +6,7 @@ public class QueueApp {
 
     public static void main(String[] args) {
         Queue<String> queue = new PriorityQueue<>();
-        queue.offer("Ichwan");
+        queue.add("Ichwan");
         queue.offer("Sholihin");
         queue.offer("Ahmad");
         queue.offer("Imamuddin");
@@ -20,10 +20,10 @@ public class QueueApp {
 
     public static void dequesApp(){
         Deque<String> deque = new ArrayDeque<>();
-        deque.offerFirst("Item 1");
-        deque.offerFirst("Item 2");
-        deque.offerFirst("Item 3");
-        deque.offerLast("Item 4");
+        deque.offer("Item 1");
+        deque.offer("Item 2");
+        deque.offer("Item 3");
+        deque.offer("Item 4");
         deque.offerFirst("Item 5");
 
         for (var value: deque){
