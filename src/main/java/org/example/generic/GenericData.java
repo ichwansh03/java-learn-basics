@@ -17,6 +17,10 @@ public class GenericData<T, R> {
         return data;
     }
 
+    public R getMessage() {
+        return message;
+    }
+
     public void response(T data, R message){
         System.out.println("this data "+this.data+" from data " +data+
                 ", and message "+this.message+" from message "+message);
