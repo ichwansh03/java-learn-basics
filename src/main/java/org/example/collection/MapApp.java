@@ -25,10 +25,12 @@ public class MapApp {
     }
 
     public static void entries(Map<Integer, String> map){
-        Set<Map.Entry<Integer, String>> entries = map.entrySet();
+        //Set<Map.Entry<Integer, String>> entries = map.entrySet();
 
-        for (var entry : entries){
-            System.out.println(entry.getKey() + " = " + entry.getValue());
-        }
+//        for (var entry : entries){
+//            System.out.println(entry.getKey() + " = " + entry.getValue());
+//        }
+
+        map.forEach((key, value) -> System.out.println(key + " = " + value));
     }
 }

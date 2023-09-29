@@ -14,9 +14,10 @@ public class ListApp {
         for (var value : num){
             System.out.println(value);
         }
+        //Method reference in Iterable
+        num.forEach(System.out::println);
 
-        List<String> name = new LinkedList<>();
-        name.addAll(List.of("Andi","Andre","Andini","Abdul"));
+        List<String> name = new LinkedList<>(List.of("Andi", "Andre", "Andini", "Abdul"));
 
         Collections.sort(name);
 
