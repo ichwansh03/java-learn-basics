@@ -6,17 +6,16 @@ public class GenericApp {
         GenericData<Integer, String> data = new GenericData<>();
         data.setData(201);
         data.setMessage("Created");
-        System.out.println(data.getData());
-        data.response(200, "OK");
+        data.response(data.getData(), "OK");
 
         validation(data);
 
         //covariant
-        SingleGeneric<String> single = new SingleGeneric<>("Ichwan");
+        SingleGeneric<Double> single = new SingleGeneric<>(12.3100001);
         generate(single);
 
         //contravariant
-        SingleGeneric<Object> gen = new SingleGeneric<>("Data");
+        SingleGeneric<Object> gen = new SingleGeneric<>("Set data dari class SingleGeneric");
         //RUNTIME-ERROR
         //gen.setData(10);
         process(gen);
@@ -24,7 +23,7 @@ public class GenericApp {
     }
 
     //covariant
-    public static void generate(SingleGeneric<? extends Object> data){
+    public static void generate(SingleGeneric<? extends Number> data){
         System.out.println(data.getData());
 
         //READ-ONLY
@@ -35,12 +34,12 @@ public class GenericApp {
     public static void process(SingleGeneric<? super String> data){
         String value = (String) data.getData();
         System.out.println(value);
-        data.setData("Sholihin");
+        data.setData("Set Data dari method process()");
     }
 
     //parent class Integer adalah Object
     //? = wildcard
-    public static void validation(GenericData<?,String> data){
-        System.out.println("Response from validation = "+data.getData());
+    public static void validation(GenericData<Integer,?> data){
+        System.out.println("Response from validation = "+data.getData()+ " and "+data.getMessage());
     }
 }
