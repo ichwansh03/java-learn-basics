@@ -11,3 +11,6 @@
 * Membuat distribution file agar ketika di build, dependency third party tetap di bundle => ![Maven Assembly Plugin](https://maven.apache.org/plugins/maven-assembly-plugin/usage.html)
 * `mvn package assemby:single` untuk menjalankan distribution file.
 * Dengan `<dependencyManagement>` tidak perlu lagi memasukkan version pada file `pom.xml` disetiap module.
+
+## Related Article
+![Mengelola Project Multi Module Menggunakan Apache Maven di Java](https://ichwansholihin.medium.com/mengelola-multi-module-menggunakan-apache-maven-di-java-daf91ed845b1)
