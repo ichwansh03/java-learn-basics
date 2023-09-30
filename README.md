@@ -9,4 +9,5 @@
 * `mvn package` digunakan untuk membuat file package ke .jar
 * `java -jar target/nama_file-SNAPSHOT.jar` untuk running file jar
 * Membuat distribution file agar ketika di build, dependency third party tetap di bundle => ![Maven Assembly Plugin](https://maven.apache.org/plugins/maven-assembly-plugin/usage.html)
-* `mvn package assemby:single` untuk menjalankan distribution file
+* `mvn package assemby:single` untuk menjalankan distribution file.
+* Dengan `<dependencyManagement>` tidak perlu lagi memasukkan version pada file `pom.xml` disetiap module.
