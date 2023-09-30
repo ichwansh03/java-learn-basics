@@ -8,6 +8,7 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        Data data = new Data("Ichwan");
+        System.out.println( "Hello "+data.getName());
     }
 }

@@ -7,7 +7,12 @@
   <groupId>org.example</groupId>
   <artifactId>apachemaven</artifactId>
   <version>1.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
 
+  <modules>
+    <module>admin</module>
+    <module>user</module>
+  </modules>
   <name>apachemaven</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
@@ -16,20 +21,59 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
+    <gson.version>2.10.1</gson.version>
   </properties>
 
-  <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.11</version>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.example</groupId>
+        <artifactId>user</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>4.11</version>
+        <scope>test</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>com.google.code.gson</groupId>
+        <artifactId>gson</artifactId>
+        <version>${gson.version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+<!--add repositories-->
+
+<!--  <repositories>-->
+<!--    <repository>-->
+<!--      <id></id>-->
+<!--      <name></name>-->
+<!--      <url></url>-->
+<!--    </repository>-->
+<!--  </repositories>-->
 
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
+        <!-- bundle jar distribution file with third party dependency-->
+        <plugin>
+          <artifactId>maven-assembly-plugin</artifactId>
+          <version>3.6.0</version>
+          <configuration>
+            <descriptorRefs>
+              <descriptorRef>jar-with-dependencies</descriptorRef>
+            </descriptorRefs>
+            <archive>
+              <manifest>
+                <mainClass>org.example.App</mainClass>
+              </manifest>
+            </archive>
+          </configuration>
+        </plugin>
         <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
         <plugin>
           <artifactId>maven-clean-plugin</artifactId>
@@ -72,4 +116,5 @@
       </plugins>
     </pluginManagement>
   </build>
+
 </project>
