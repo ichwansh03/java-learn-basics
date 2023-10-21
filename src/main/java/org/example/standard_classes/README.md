@@ -7,4 +7,4 @@
 * Class `PropertiesApp` digunakan untuk mengkonfigurasi dan menyimpan file properties.
 
 ## Related Article
-![Perbedaan Antara StringBuffer dan StringBuilder di Java](https://ichwansholihin.medium.com/perbedaan-antara-stringbuffer-dan-stringbuilder-di-java-5465a8d01005)
+[Perbedaan Antara StringBuffer dan StringBuilder di Java](https://ichwansholihin.medium.com/perbedaan-antara-stringbuffer-dan-stringbuilder-di-java-5465a8d01005)
