@@ -10,4 +10,4 @@
 * Setiap interface `Collection` sudah disediakan class abstract dan tidak perlu implement collection.
 
 ## Related Article
-![Eksplorasi Struktur Data Queue dan Deque serta Implementasinya di Java](https://ichwansholihin.medium.com/eksplorasi-struktur-data-queue-dan-deque-serta-implementasinya-di-java-15b016e87703)
+[Eksplorasi Struktur Data Queue dan Deque serta Implementasinya di Java](https://ichwansholihin.medium.com/eksplorasi-struktur-data-queue-dan-deque-serta-implementasinya-di-java-15b016e87703)
