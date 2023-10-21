@@ -13,6 +13,6 @@
 
 ## Related Articles
 
-![Perbandingan Pass by Value dan Pass by Reference di Java](https://ichwansholihin.medium.com/perbandingan-pass-by-value-dan-pass-by-reference-di-java-af94ef10ea78)
+[Perbandingan Pass by Value dan Pass by Reference di Java](https://ichwansholihin.medium.com/perbandingan-pass-by-value-dan-pass-by-reference-di-java-af94ef10ea78)
 
-![Mengelola Data Immutable Menggunakan Record Class di Java](https://ichwansholihin.medium.com/mengelola-data-immutable-menggunakan-record-class-di-java-ab4ff258ce3b)
+[Mengelola Data Immutable Menggunakan Record Class di Java](https://ichwansholihin.medium.com/mengelola-data-immutable-menggunakan-record-class-di-java-ab4ff258ce3b)
